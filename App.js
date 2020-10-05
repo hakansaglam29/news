@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native';
 
-const Bitcoin = () => {
+const News = () => {
   return (
     <SafeAreaView> 
       <ScrollView
@@ -77,14 +77,14 @@ const Bitcoin = () => {
             <Text style={styles.copyright}> Copyright©</Text>
             <Image style={styles.logo} source={require('./img/cw.png')}/>
         </View>
-        </ScrollView>
-      </SafeAreaView>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   news: {
-    padding: 15,
+    paddingLeft: 12,
     color: "black",
     backgroundColor: "white",
     fontSize: 35,
@@ -106,6 +106,8 @@ const styles = StyleSheet.create({
     height: 100,
     display:"flex",
     flexDirection:"row",
+    alignItems:"center",
+    justifyContent:"space-between",
     padding: 5,
     color: "black",
     backgroundColor: "white",
@@ -169,7 +171,8 @@ const styles = StyleSheet.create({
   newslogo: {
     width: "100%",
     height: "100%",
-    resizeMode:"contain"
+    resizeMode:"contain",
+
   },
 });
-export default Bitcoin;
+export default News;
